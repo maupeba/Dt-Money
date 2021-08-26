@@ -21,13 +21,14 @@ export function App() {
   
   return (
     <>
+      <GlobalStyle />
+      
       <Header onOpenNewTransactionModal={handleOpenNewTransactionModal}/>
 
       <Dashboard />
 
       <NewTransactionModal isOpen={isNewTransactionModalOpen} onRequestClose={handleCloseNewTransactionModal} />
 
-      <GlobalStyle />
     </>
   );
 }
