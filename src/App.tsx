@@ -5,7 +5,7 @@ import { Dashboard } from './components/Dashboard/index';
 
 import { GlobalStyle } from './styles/global';
 import { NewTransactionModal } from './components/NewTransactionModal/index';
-import { TransactionsProvider } from './TransactionsContexts';
+import { TransactionsProvider } from './hooks/useTransactions';
 
 Modal.setAppElement('#root');
 
