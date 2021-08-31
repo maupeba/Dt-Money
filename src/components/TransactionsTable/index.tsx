@@ -13,7 +13,6 @@ interface Transaction {
 
 export function TransactionsTable() {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
-  
 
   useEffect(() => {
     api.get('transactions').then(response => setTransactions(response.data.transactions))
